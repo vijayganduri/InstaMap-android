@@ -1,6 +1,8 @@
 package com.vijayganduri.zippr.instamap.beans;
 
-public class LowResolution {
+import java.io.Serializable;
+
+public class LowResolution implements Serializable{
 
 	private String url;
 	private int width;

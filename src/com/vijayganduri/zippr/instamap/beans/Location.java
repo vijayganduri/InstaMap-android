@@ -1,6 +1,8 @@
 package com.vijayganduri.zippr.instamap.beans;
 
-public class Location {
+import java.io.Serializable;
+
+public class Location implements Serializable{
 
 	private double latitude;
 	private double longitude;

@@ -5,9 +5,7 @@ To create a simple feed of instagram popular photos. On tapping each photo it sh
 ### TODO ###
 * Add analytics - Inmobi
 * Create Base class
-* Create MapFragment
-* Show photo in map view balloon
-* Check if Umano sliding up panel can be fit into this
+* Check if Umano sliding up panel can be fit into map fragment
 
 ### DONE ###
 * Setup Actionbarsherlock
@@ -21,3 +19,5 @@ To create a simple feed of instagram popular photos. On tapping each photo it sh
 * Show Grid layout
 * Optimize for Tablet
 * Try landscape optimization
+* Create MapFragment
+* Show photo in map view balloon

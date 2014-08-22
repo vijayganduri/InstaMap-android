@@ -19,6 +19,7 @@ import android.widget.Toast;
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Window;
 import com.squareup.picasso.Picasso;
+import com.vijayganduri.zippr.instamap.AppConstants;
 import com.vijayganduri.zippr.instamap.R;
 import com.vijayganduri.zippr.instamap.beans.Data;
 import com.vijayganduri.zippr.instamap.beans.PhotoResponse;
@@ -86,9 +87,9 @@ public class HomeFeedActivity extends SherlockActivity implements OnItemClickLis
 	}
 
 	@Override
-	public void onItemClick(AdapterView<?> arg0, View arg1, int pos, long arg3) {
+	public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
 		Intent intent = new Intent(this, DetailMapActivity.class);
-		//intent.putExtra(AppConstants.INTENT_POS, position);
+		intent.putExtra(AppConstants.INTENT_DATA, adapter.getItem(position));
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TOP);
 		startActivity(intent);
 	}
@@ -103,7 +104,6 @@ public class HomeFeedActivity extends SherlockActivity implements OnItemClickLis
 		}
 
 		public void addItems(List<Data> data){
-			Log.d(TAG, "response "+data);
 			for(Data item:data){
 				add(item);
 			}

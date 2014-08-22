@@ -1,6 +1,7 @@
 package com.vijayganduri.zippr.instamap.beans;
 
-import java.util.List;
+import java.io.Serializable;
+
 
 
 /**
@@ -8,7 +9,7 @@ import java.util.List;
  * @author Vijay Ganduri
  *
  */
-public class Data{
+public class Data implements Serializable{
 
 	private String id;
 	private Images images;

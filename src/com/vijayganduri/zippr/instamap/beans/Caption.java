@@ -1,5 +1,7 @@
 package com.vijayganduri.zippr.instamap.beans;
 
+import java.io.Serializable;
+
 
 
 /**
@@ -7,7 +9,7 @@ package com.vijayganduri.zippr.instamap.beans;
  * @author Vijay Ganduri
  *
  */
-public class Caption{
+public class Caption implements Serializable{
 
 	private String text;
 

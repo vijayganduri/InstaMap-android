@@ -1,5 +1,7 @@
 package com.vijayganduri.zippr.instamap.beans;
 
+import java.io.Serializable;
+
 
 
 /**
@@ -7,7 +9,7 @@ package com.vijayganduri.zippr.instamap.beans;
  * @author Vijay Ganduri
  *
  */
-public class Images{
+public class Images implements Serializable{
 
 	private LowResolution low_resolution;
 	private Thumbnail thumbnail;

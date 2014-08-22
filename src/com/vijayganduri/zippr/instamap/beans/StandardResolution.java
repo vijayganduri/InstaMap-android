@@ -1,6 +1,8 @@
 package com.vijayganduri.zippr.instamap.beans;
 
-public class StandardResolution {
+import java.io.Serializable;
+
+public class StandardResolution implements Serializable{
 	private String url;
 	private int width;
 	private int height;
